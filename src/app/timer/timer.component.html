@@ -1,0 +1,17 @@
+<div class="flex flex-wrap my-5">
+  <input class="flex-auto w-48 mb-1 md:mr-1 sm:mr-1 cursor-pointer btn bg-blue-700 hover:bg-blue-800 transition duration-300 ease-in-out text-white text-center p-3 rounded-md" type="button" value="Speeches: 5-7 Mins" (click)=startSpeechesTimer() [disabled]="isCounterRunning" />
+
+
+  <input class="flex-auto w-48 mb-1 md:mr-1 sm:mr-1 cursor-pointer btn bg-blue-700 hover:bg-blue-800 transition duration-300 ease-in-out text-white text-center p-3 rounded-md" type="button" value="Evaluations: 1-3 Mins" (click)="startEvaluationTimer()" [disabled]="isCounterRunning"/>
+
+
+  <input class="flex-auto w-48 mb-1 md:mr-1 cursor-pointer btn bg-blue-700 hover:bg-blue-800 transition duration-300 ease-in-out text-white text-center p-3 rounded-md" type="button" value="Table Topics: 1-2 Mins" (click)="startTableTopicsTimer()" [disabled]="isCounterRunning"/>
+
+
+  <input class="flex-auto w-48 mb-1 cursor-pointer btn bg-blue-700 hover:bg-blue-800 transition duration-300 ease-in-out text-white text-center p-3 rounded-md" type="button" value="Ice Breaker: 4-6 Mins" (click)="startIceBreakerTimer()" [disabled]="isCounterRunning"/>
+</div>
+
+<div class="flex my-5">
+  <input class="btn flex-grow w-48 cursor-pointer bg-red-700 hover:bg-red-800 transition duration-300 ease-in-out text-white text-center p-3 rounded-md" type="button" value="STOP !!" (click)=stopTheTimer() />
+  <input class="btn flex-grow w-48 ml-1 cursor-pointer bg-red-700 hover:bg-red-800 transition duration-300 ease-in-out text-white text-center p-3 rounded-md" type="button" value="RESET" (click)=resetTimer() />
+</div>

@@ -1,0 +1,31 @@
+<div
+  *ngIf="timerDisplay | async as time"
+  class="py-60 mt-2 rounded-sm transition duration-300 ease-in-out"
+  [ngClass]="changeBackgroundBasedOnTimeRemaining(time)"
+>
+  <div class="flex justify-center">
+    <h2 class="text-8xl subpixel-antialiased" [ngClass]="timerTextColour">
+      {{ time.minutes }}:{{ time.seconds }}s
+    </h2>
+  </div>
+  <!-- <div class="flex justify-center pt-7">
+    <div *ngIf="timerTextColour === 'text-green-700'">
+      <img
+        src="https://media.giphy.com/media/ZF3bEnWthZVEYzBeES/giphy.gif"
+        height="100"
+      />
+    </div>
+    <div *ngIf="timerTextColour === 'text-yellow-500'">
+      <img
+        src="https://media.giphy.com/media/3o751ZKB91R8ZvMvde/giphy.gif"
+        height="100"
+      />
+    </div>
+    <div *ngIf="timerTextColour === 'text-red-700'">
+      <img
+        src="https://media.giphy.com/media/xT1R9B8LKpdyGRbqN2/giphy.gif"
+        height="100"
+      />
+    </div>
+  </div> -->
+</div>
