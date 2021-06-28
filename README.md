@@ -1,2 +1,2 @@
 # toastmaster-timekeeper
-https://badgen.net/npm/v/express
+[![Generic badge](https://img.shields.io/badge/<SUBJECT>-<STATUS>-<COLOR>.svg)](https://shields.io/)
